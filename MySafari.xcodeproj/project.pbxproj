@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		F577FC111BD9C0F50034781E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F577FC101BD9C0F50034781E /* main.m */; };
 		F577FC141BD9C0F50034781E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F577FC131BD9C0F50034781E /* AppDelegate.m */; };
-		F577FC171BD9C0F50034781E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F577FC161BD9C0F50034781E /* ViewController.m */; };
 		F577FC1A1BD9C0F50034781E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F577FC181BD9C0F50034781E /* Main.storyboard */; };
 		F577FC1C1BD9C0F50034781E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F577FC1B1BD9C0F50034781E /* Assets.xcassets */; };
 		F577FC1F1BD9C0F50034781E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F577FC1D1BD9C0F50034781E /* LaunchScreen.storyboard */; };
 		F577FC2A1BD9C0F60034781E /* MySafariTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F577FC291BD9C0F60034781E /* MySafariTests.m */; };
 		F577FC351BD9C0F60034781E /* MySafariUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F577FC341BD9C0F60034781E /* MySafariUITests.m */; };
+		F577FC471BD9C2020034781E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F577FC461BD9C2020034781E /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		F577FC101BD9C0F50034781E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F577FC121BD9C0F50034781E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F577FC131BD9C0F50034781E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F577FC151BD9C0F50034781E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F577FC161BD9C0F50034781E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F577FC191BD9C0F50034781E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F577FC1B1BD9C0F50034781E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F577FC1E1BD9C0F50034781E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		F577FC301BD9C0F60034781E /* MySafariUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySafariUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F577FC341BD9C0F60034781E /* MySafariUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySafariUITests.m; sourceTree = "<group>"; };
 		F577FC361BD9C0F60034781E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F577FC451BD9C2020034781E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		F577FC461BD9C2020034781E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,10 @@
 		F577FC0E1BD9C0F50034781E /* MySafari */ = {
 			isa = PBXGroup;
 			children = (
+				F577FC451BD9C2020034781E /* WebViewController.h */,
+				F577FC461BD9C2020034781E /* WebViewController.m */,
 				F577FC121BD9C0F50034781E /* AppDelegate.h */,
 				F577FC131BD9C0F50034781E /* AppDelegate.m */,
-				F577FC151BD9C0F50034781E /* ViewController.h */,
-				F577FC161BD9C0F50034781E /* ViewController.m */,
 				F577FC181BD9C0F50034781E /* Main.storyboard */,
 				F577FC1B1BD9C0F50034781E /* Assets.xcassets */,
 				F577FC1D1BD9C0F50034781E /* LaunchScreen.storyboard */,
@@ -273,8 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F577FC171BD9C0F50034781E /* ViewController.m in Sources */,
 				F577FC141BD9C0F50034781E /* AppDelegate.m in Sources */,
+				F577FC471BD9C2020034781E /* WebViewController.m in Sources */,
 				F577FC111BD9C0F50034781E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
