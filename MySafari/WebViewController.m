@@ -72,7 +72,6 @@
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-    NSLog(@"webviewDidStartLoad");
     [self.activityIndicator startAnimating];
 }
 
@@ -98,7 +97,6 @@
         self.urlTextField.alpha = 0.5;
     }
     if(self.lastContentOffset > scrollView.contentOffset.y){
-        NSLog(@"schollingUp");
         self.urlTextField.alpha = 1.0;
     }
     self.lastContentOffset = scrollView.contentOffset.y;
